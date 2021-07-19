@@ -14,7 +14,7 @@ header {
 /* navigation */
 nav {
   position: fixed;
-  z-index: 10000;
+  z-index: 100000000;
   left: 0;
   right: 0;
   top: 0;
@@ -55,6 +55,7 @@ nav .links a {
   font-weight: bold;
   color: tomato;
   text-decoration: none;
+  z-index: 100000000;
 }
 #nav-toggle {
   position: absolute;
