@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -244,6 +248,14 @@ h5 {
   background-color: #fff;
 }
 
+.design_works img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.design_works img:hover {
+  transform: scale(1.1);
+}
+
 .other_works_xd img {
   width: 80%;
   padding: 2rem;
@@ -353,7 +365,7 @@ h5 {
   color: teal;
 }
 .mini_proj a {
-  color: teal;
+  color: rgb(39, 59, 233);
   text-decoration: none;
   margin: 2rem 0;
 }
@@ -420,6 +432,18 @@ textarea:hover {
   background-color: tomato;
 } */
 
+#contact-me {
+  /* background-color: #ddf3f5; */
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.contact_wrap {
+  text-align: center;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.095);
+}
+.contact_wrap img {
+  width: 10%;
+}
 /* footer section */
 #footer {
   background-color: tomato;
