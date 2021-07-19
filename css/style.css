@@ -336,25 +336,25 @@ h5 {
 }
 .btn_group a {
   text-decoration: none;
-  color: teal;
+  /* color: teal; */
 }
 
 .btn_group a:hover {
-  color: #fff;
+  color: #555;
 }
 .btn_group button {
   border: 1px solid salmon;
+  color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
-  color: #555;
-  background-color: #fff;
   margin: 1rem 0;
+  background-color: tomato;
   transition: all 300ms ease-in;
 }
 
 .btn_group button:hover {
-  background-color: tomato;
+  background-color: #fff;
 }
 
 .mini_projs {
@@ -366,7 +366,7 @@ h5 {
   color: teal;
 }
 .mini_proj a {
-  color: rgb(39, 59, 233);
+  color: #0645ad;
   text-decoration: none;
   margin: 2rem 0;
 }
@@ -492,6 +492,7 @@ textarea:hover {
 }
 
 /* media querry */
+
 @media screen and (max-width: 768px) {
   nav .logo {
     float: none;
@@ -515,16 +516,18 @@ textarea:hover {
     box-sizing: border-box;
     transition: all 0.5s ease-in-out;
   }
-  nav .links a {
-    font-size: 20px;
-  }
+
   nav :checked ~ .links {
     bottom: 0;
   }
   nav .icon-burger {
     display: block;
   }
-  nav :checked ~ .icon-burger .line:nth-child(1) {
+  nav .icon-burger:hover {
+    cursor: pointer;
+  }
+  /* /using only css to toggle navbar */
+  /* nav :checked ~ .icon-burger .line:nth-child(1) {
     transform: translateY(10px) rotate(225deg);
   }
   nav :checked ~ .icon-burger .line:nth-child(3) {
@@ -532,7 +535,20 @@ textarea:hover {
   }
   nav :checked ~ .icon-burger .line:nth-child(2) {
     opacity: 0;
+  } */
+
+  /* close the nav on click */
+  .close {
+    /* display: none; */
+    transform: translateY(-200%);
   }
+  /* close the nav on click */
+
+  /* open the nav on click */
+  .open {
+    transform: translateY(0%);
+  }
+  /* open the nav on click */
 
   /* intro section */
 
@@ -610,6 +626,10 @@ textarea:hover {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+  }
+
+  .mini_proj a {
+    line-height: 2rem;
   }
 
   /* footer section */
